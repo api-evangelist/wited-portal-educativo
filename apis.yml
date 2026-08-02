@@ -1,9 +1,28 @@
 aid: wited-portal-educativo
 name: Wited (Portal Educativo)
-description: Wited (Portal Educativo) is a company surfaced as a portfolio company of 500-global and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Wited (formerly Portal Educativo) is a Chilean edtech company backed by
+  500 Global that delivers online academic support and homeschooling across Latin
+  America. Its two products - Reforzamiento (tutoring, homework help, and exam prep
+  for K-12 students in traditional schools) and Colegio Online (a complete online
+  school for homeschoolers) - combine curriculum-aligned courses, interactive exercises,
+  the Max AI tutoring chatbot, live teacher support (Profes Express), and a parent
+  progress dashboard. Wited operates in Chile, Mexico, Colombia, Panama, Argentina,
+  Brazil, Spain, and the United States. The consumer platform runs at app.wited.com
+  against a private backend (api.wited.com); the company publishes no public developer
+  program or API.
 url: https://raw.githubusercontent.com/api-evangelist/wited-portal-educativo/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.wited.com/wp-content/uploads/2024/01/Wited-2025.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Education
+- EdTech
+- Tutoring
+- Homeschooling
+- Online Learning
+- Chile
+- Latin America
+- K-12
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +50,37 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://wited.com
+  url: https://www.wited.com
+- type: Login
+  url: https://app.wited.com/auth/login
+- type: SignUp
+  url: https://pagos.wited.com/reforzamiento?plan=pro-1&modalidad=mensual
+- type: Pricing
+  url: https://www.wited.com/cl/reforzamiento/
+  description: Plan tiers and monthly CLP pricing (Pro 1+/4+/8+) are published on
+    the product pages.
+- type: Support
+  url: https://ayuda.wited.com/es/
+- type: TermsOfService
+  url: https://www.wited.com/cl/terminos-y-condiciones-de-uso/
+- type: PrivacyPolicy
+  url: https://www.wited.com/cl/politicas-privacidad/
+- type: GitHubOrganization
+  url: https://github.com/Wited
+  description: Official org (Chile) - no public repositories.
+- type: LLMsTxt
+  url: llms/wited-portal-educativo-llms.txt
+  description: Saved verbatim from https://www.wited.com/llms.txt (Yoast SEO generated).
+- type: WellKnown
+  url: well-known/wited-portal-educativo-well-known.yml
+- type: ContentSignal
+  url: well-known/wited-portal-educativo-robots.txt
+  description: robots.txt carries Cloudflare Content-Signal directives (search=yes,
+    ai-train=no, use=reference) and blocks AI training crawlers.
+- type: DomainSecurity
+  url: security/wited-portal-educativo-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
